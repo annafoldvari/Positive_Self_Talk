@@ -15,6 +15,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="staryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="KVi-Mm-hV0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2N-se-bdK">
                                 <rect key="frame" x="158" y="418.5" width="98" height="59"/>
                                 <constraints>
@@ -28,7 +32,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="e2N-se-bdK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Ie-Zu-5ca"/>
+                            <constraint firstAttribute="bottom" secondItem="KVi-Mm-hV0" secondAttribute="bottom" id="DFC-ek-Y0J"/>
+                            <constraint firstItem="KVi-Mm-hV0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="GaV-ij-zm7"/>
                             <constraint firstItem="e2N-se-bdK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RPy-7i-Bh1"/>
+                            <constraint firstItem="KVi-Mm-hV0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fpV-xf-CAw"/>
+                            <constraint firstItem="KVi-Mm-hV0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gLZ-Jo-HB5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,4 +46,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="106.47321428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="staryBackground" width="444.5" height="414"/>
+    </resources>
 </document>
